@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
+  env: {
+    PUBLIC_GROUP_CHAT_ID: process.env.PUBLIC_GROUP_CHAT_ID,
+  },
 };
 
 export default nextConfig;
